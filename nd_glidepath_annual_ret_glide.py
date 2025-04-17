@@ -156,24 +156,24 @@ for i in range(num_pots):
         post_ret_glide = st.number_input(f'Post Ret. Glide Length {i+1}', min_value=0, max_value=100, value=10)
     with col2:
         st.header("Portfolios")
-        growth_rate = st.number_input(f'Growth Rate {i+1}', min_value=0.000, max_value=1.000, value=0.070, format="%.3f")
-        growth_vol = st.number_input(f'Growth Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.030, format="%.3f")
-        glide_rate = st.number_input(f'Glide Rate {i+1}', min_value=0.000, max_value=1.000, value=0.070, format="%.3f")
-        glide_vol = st.number_input(f'Glide Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.030, format="%.3f")
-        ret_rate = st.number_input(f'Ret Rate {i+1}', min_value=0.000, max_value=1.000, value=0.070, format="%.3f")
-        ret_vol = st.number_input(f'Ret Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.030, format="%.3f")
+        growth_rate = st.number_input(f'Growth Rate {i+1}', min_value=0.000, max_value=1.000, value=0.080, format="%.3f")
+        growth_vol = st.number_input(f'Growth Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.015, format="%.3f")
+        glide_rate = st.number_input(f'Glide Rate {i+1}', min_value=0.000, max_value=1.000, value=0.060, format="%.3f")
+        glide_vol = st.number_input(f'Glide Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.01, format="%.3f")
+        ret_rate = st.number_input(f'Ret Rate {i+1}', min_value=0.000, max_value=1.000, value=0.040, format="%.3f")
+        ret_vol = st.number_input(f'Ret Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.060, format="%.3f")
     with col3:
         st.header("Income/withdrawals")
         initial_investment = st.number_input(f'Initial Investment {i+1}', min_value=0.0, value=1000.000, format="%.3f")
-        contributions = st.number_input(f'Annual Cont. {i+1}', min_value=0.0, value=4000.000, format="%.3f")
+        contributions = st.number_input(f'Annual Cont. {i+1}', min_value=0.0, value=3000.000, format="%.3f")
         contributions_growth_rate = st.number_input(f'Cont. Growth Rate {i+1}', min_value=0.000, max_value=1.000, value=0.020, format="%.3f")  
         decum_rate = st.number_input(f'Decum. Rate {i+1}', min_value=0.000, max_value=1.000, value=0.040, format="%.3f")
         withdrawl_amount = st.number_input(f'Annual withdrawal amount {i+1}', min_value=0, max_value=1000000, value= 0)
         withdraw_25_percent = st.checkbox(f'Withdraw 25% at Retirement Date for Pot {i+1}')
     with col4:     
         st.header("Data")
-        lower_bound = st.number_input(f'Lower Bound (above 10 iterations) {i+1} (%)', min_value=0, max_value=100, value=25)
-        upper_bound = st.number_input(f'Upper Bound (above 10 iterations){i+1} (%)', min_value=0, max_value=100, value=75)
+        lower_bound = st.number_input(f'Lower Bound (above 10 iterations) {i+1} (%)', min_value=0, max_value=100, value=20)
+        upper_bound = st.number_input(f'Upper Bound (above 10 iterations){i+1} (%)', min_value=0, max_value=100, value=80)
         iterations = st.number_input(f'Iterations {i+1}', min_value=1, max_value=5000, value=50)
         
     
