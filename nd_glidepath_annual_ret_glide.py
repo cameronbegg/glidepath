@@ -159,7 +159,7 @@ for i in range(num_pots):
         growth_rate = st.number_input(f'Growth Rate {i+1}', min_value=0.000, max_value=1.000, value=0.080, format="%.3f")
         growth_vol = st.number_input(f'Growth Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.015, format="%.3f")
         glide_rate = st.number_input(f'Glide Rate {i+1}', min_value=0.000, max_value=1.000, value=0.060, format="%.3f")
-        glide_vol = st.number_input(f'Glide Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.01, format="%.3f")
+        glide_vol = st.number_input(f'Glide Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.1, format="%.3f")
         ret_rate = st.number_input(f'Ret Rate {i+1}', min_value=0.000, max_value=1.000, value=0.040, format="%.3f")
         ret_vol = st.number_input(f'Ret Volatility {i+1}', min_value=0.000, max_value=1.000, value=0.060, format="%.3f")
     with col3:
