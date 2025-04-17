@@ -132,7 +132,7 @@ def nd_model(start_age, # simulation starting age
 st.set_page_config(layout="wide", 
                    initial_sidebar_state="expanded")
 
-st.title('Investment Growth Over Time')
+st.title('Glidepath Modelling')
 
 # Define the number of investment pots
 num_pots = st.number_input('Number of Investment Pots', min_value=1, max_value=10, value=1)
@@ -148,7 +148,7 @@ for i in range(num_pots):
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.header("Ages & Lenghts")
+        st.header("Ages & Lengths")
         start_age = st.number_input(f'Start Age {i+1}', min_value=0, max_value=100, value=18)
         end_age = st.number_input(f'End Age {i+1}', min_value=0, max_value=100, value=95)
         ret_age = st.number_input(f'Retirement Age {i+1}', min_value=0, max_value=100, value=65)
