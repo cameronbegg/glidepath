@@ -174,7 +174,7 @@ for i in range(num_pots):
         st.header("Data")
         lower_bound = st.number_input(f'Lower Bound (above 10 iterations) {i+1} (%)', min_value=0, max_value=100, value=20)
         upper_bound = st.number_input(f'Upper Bound (above 10 iterations){i+1} (%)', min_value=0, max_value=100, value=80)
-        iterations = st.number_input(f'Iterations {i+1}', min_value=1, max_value=5000, value=50)
+        iterations = st.number_input(f'Iterations {i+1}', min_value=1, max_value=5000, value=100)
         
     
     st.markdown("---")
