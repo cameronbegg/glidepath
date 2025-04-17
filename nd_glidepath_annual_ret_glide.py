@@ -212,7 +212,7 @@ with col1:
 
 with col2:
     # Toggle to only show mean/median
-    brightness = st.slider("Non Median / Mean Opacity:", 0.0, 1.0, 0.05)
+    brightness = st.slider("Non Median / Mean Opacity:", 0.0, 1.0, 0.03)
 
 
     
